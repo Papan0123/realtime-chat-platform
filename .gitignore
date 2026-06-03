@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+web-build/
+coverage/
+
+# Expo
+.expo/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.claude/
+AGENTS.md
+CLAUDE.md
+
+# TypeScript
+*.tsbuildinfo
+
+# Codex scratch/output folders
+work/
+outputs/
