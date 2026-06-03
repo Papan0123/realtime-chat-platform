@@ -55,3 +55,7 @@ For phone testing, use your laptop Wi-Fi IP inside the app API endpoint, for exa
 ```text
 http://192.168.1.8:3000
 ```
+
+## Deploy
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for AWS EC2 deployment steps.

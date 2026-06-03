@@ -47,8 +47,16 @@ type ComposerKeyEvent = {
   };
 };
 
+function getDefaultApiUrl() {
+  const location = globalThis.location;
+  if (location?.hostname) {
+    return `${location.protocol}//${location.hostname}:3000`;
+  }
+  return 'http://localhost:3000';
+}
+
 export default function App() {
-  const [apiUrl, setApiUrl] = useState('http://localhost:3000');
+  const [apiUrl, setApiUrl] = useState(getDefaultApiUrl);
   const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('priyanshu@example.com');
